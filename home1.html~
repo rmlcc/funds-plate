@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <link rel="stylesheet" href="css/yingmai.css">
+    <script src="js/yingmai1.js"></script>
+  </head>
+
+  <body>
+    <div data-role="page" id="pagehome">
+      
+      <div id="main" data-role="main" class="ui-content" style="background:url(image/hdpi/背景图.png);background-size:320px 360px;">
+	<img id="icon" src="image/icon.jpg" class="yingmai-icon" width="30" height="30" style="float:left;position:relative;left:-2px;">
+	<div id="shareDiv" class="yingmai-div1" style="float:left;width:158px;height:30px;position:relative;left:23px;">
+	  <img id="shareIcon" src="image/hdpi/金额.png" width="16" height="16" style="float:left;position:relative;left:11px;top:8px;">
+	  <p id="shareText" class="yingmai-font1" style="float:left;position:relative;left:26px;bottom:4px;">邀请额</p>
+	  <p id="shareValue" class="yingmai-font4" style="float:left;position:relative;left:30px;bottom:4px;">1000CNY</p>
+	</div>
+	<div id="shareButton" class="yingmai-button1" style="width:60px;height:30px;float:left;position:relative;left:43px;">
+	  <p id="shareButtonText" style="position:relative;left:16px;bottom:8px;">邀请</p>
+	</div>
+
+	<div id="buttonGrop1" data-role="controlgroup" data-type="horizontal" style="position:relative;top:27px;">
+	  <div id="buy50" class="yingmai-button2" style="background-size:60px 60px;width:60px;height:60px;float:left;position:relative;left:5px;">
+	    <p id="buy50Text" style="position:relative;bottom:3px;">50</p>
+	  </div>
+	  <div id="buy100" class="yingmai-button2" style="background-size:60px 60px;width:60px;height:60px;float:left;position:relative;left:51px;">
+	    <p id="but100Text" style="position:relative;bottom:3px;">100</p>
+	  </div>
+	  <div id="buy300" class="yingmai-button2" style="background-size:60px 60px;width:60px;height:60px;float:left;position:relative;left:101px;">
+	    <p id="buy300Text" style="position:relative;bottom:3px;">300</p>
+	  </div>
+	</div>
+	
+	<div id="buttonGrop2" data-role="controlgroup" data-type="horizontal" style="position:relative;top:27px;">
+	  <div id="buy500" class="yingmai-button2" style="background-size:60px 60px;width:60px;height:60px;float:left;position:relative;left:5px;">
+	    <p id="buy500Text" style="position:relative;bottom:3px;">500</p>
+	  </div>
+	  <div id="buy800" class="yingmai-button2" style="background-size:60px 60px;width:60px;height:60px;float:left;position:relative;left:51px;">
+	    <p id="buy800Text" style="position:relative;bottom:3px;">800</p>
+	  </div>
+	  <div id="buy1000" class="yingmai-button2" style="background-size:60px 60px;width:60px;height:60px;float:left;position:relative;left:101px;">
+	    <p id="buy1000Text" style="position:relative;bottom:3px;">1000</p>
+	  </div>
+	</div>
+	
+	<div id="buttonGrop3" data-role="controlgroup" data-type="horizontal" style="position:relative;top:27px;">
+	  <div id="buy3000" class="yingmai-button2" style="background-size:60px 60px;width:60px;height:60px;float:left;position:relative;left:5px;">
+	    <p id="buy3000Text" style="position:relative;bottom:3px;">3000</p>
+	  </div>
+	  <div id="buy5000" class="yingmai-button2" style="background-size:60px 60px;width:60px;height:60px;float:left;position:relative;left:51px;">
+	    <p id="buy5000Text" style="position:relative;bottom:3px;">5000</p>
+	  </div>
+	  <div id="buy8000" class="yingmai-button2" style="background-size:60px 60px;width:60px;height:60px;float:left;position:relative;left:101px;">
+	    <p id="buy8000Text" style="position:relative;bottom:3px;">8000</p>
+	  </div>
+	</div><br><br><br>	
+      </div>
+      
+      <div id="panel" style="width:320px;height:810px;background-color:#1B1420;">
+	<div id="earnInfo" class="yingmai-div2" style="width:260px;height:70px;position:relative;left:30px;top:-35px;">
+	  <p id="earnText" class="yingmai-font3" style="float:left;position:relative;left:17px;top:-5px">点赚</p>
+	  <p id="earnNumber" class="yingmai-font4" style="float:left;position:relative;left:24px;top:2px">7%~49%</p>
+	  <div id="earnAll" class="yingmai-div3" style="width:224px;height:6px;position:relative;left:18px;top:50px;">
+	    <div id="earnMaxRate" class="yingmai-div4" style="width:122px;height:6px;">
+	      <div id="earnRate" class="yingmai-div5" style="width:18px;height:6px"></div>
+	    </div>
+	  </div>
+	</div>
+	
+	<div id="allMoney" class="yingmai-div6" style="width:290px;height:45px;position:relative;left:15px;top:-20px;">
+	  <p id="allMoneyText" class="yingmai-font2" style="float:left;position:relative;left:17px;">总额</p>
+	  <p id="allMoneyValue" class="yingmai-font5" style="text-align:right;position:relative;right:17px;top:13px;">1000CNY</p>
+	</div>
+
+	<div id="unlock" class="yingmai-div6" style="width:290px;height:45px;position:relative;left:15px;top:-20px;">
+	  <p id="unlockText" class="yingmai-font2" style="float:left;position:relative;left:17px;">无冻结</p>
+	  <p id="unlockValue" class="yingmai-font5" style="text-align:right;position:relative;right:17px;top:13px;">1000CNY</p>
+	</div>
+
+	<div id="lock" class="yingmai-div6" style="width:290px;height:45px;position:relative;left:15px;top:-20px;">
+	  <p id="lockText" class="yingmai-font2" style="float:left;position:relative;left:17px;">冻结</p>
+	  <p id="lockInfo" class="yingmai-font5" style="text-align:right;position:relative;right:17px;top:13px;">1000CNY|728天</p>
+	</div> 
+
+	<div id="drawPanel" class="" style="width:290px;height:45px;position:relative;left:15px;top:-15px;">
+	  <p id="drawHide" class="yingmai-font2" style="float:left;position:relative;left:17px;"></p>
+	  <input id="drawAddress" placeholder="ECT提token地址:" style="border:0px;background:#3C3360;font-family:PingFangSC-Regular;font-size:12px;color:#FFFFFF;letter-spacing:0.25px;"></input>
+	</div><br>
+
+	<div id="drawValuePanel" class="" style="float:left;width:230px;height:45px;position:relative;left:15px;top:-45px;">
+	    <input id="drawValue" placeholder="ECT提token数量:" style="border:0px;background:#3C3360;font-family:PingFangSC-Regular;font-size:12px;color:#FFFFFF;letter-spacing:0.25px;"></input>
+	</div>
+
+	<div class="yingmai-button4" style="float:left;width:50px;height:29px;position:relative;left:25px;top:-37px">
+	  <p style="float:left;position:relative;left:17px;bottom:8px;">提</p>
+	</div>
+
+	<div id="panelHide" class="" style="width:290px;height:45px;position:relative;left:15px;top:-10px;"></div>
+	
+	<div id="fee" class="yingmai-div6" style="width:290px;height:45px;position:relative;left:15px;top:-50px;">
+	  <p id="feeText" class="yingmai-font2" style="float:left;position:relative;left:17px;bottom:0px;">手续费</p>
+	  <p id="feeRate" class="yingmai-font5" style="text-align:right;position:relative;right:17px;top:14px;">12.5%</p>
+	</div>
+
+	<div id="deposit" class="yingmai-div6" style="width:290px;height:45px;position:relative;left:15px;top:-50px;">
+	  <p id="depositText" class="yingmai-font2" style="float:left;position:relative;left:17px;">ECT充值token地址</p>
+	  <p id="depositTextHide" class="yingmai-font5" style="text-align:right;position:relative;right:17px;top:13px;"></p>
+	</div>
+
+	<div id="depositAddress" class="yingmai-div6" style="width:290px;height:45px;position:relative;left:15px;top:-75px;">
+	  <p id="depositAddressText" class="yingmai-font4" style="float:left;position:relative;left:17px;top:3px">1QCXRuoxWo5Bya9NxHaVBArBQYhatHJrU7</p>
+	  <p id="depositAddressHide" class="yingmai-font5" style="text-align:right;position:relative;right:17px;top:13px;"></p>
+	</div>
+
+	<div id="buyToken" class="yingmai-div6" style="width:290px;height:45px;position:relative;left:15px;top:-75px;">
+	  <p id="buyTokenText" class="yingmai-font2" style="float:left;position:relative;left:17px;">购买ECT网址</p>
+	  <p id="buyTokenAddress" class="yingmai-font5" style="text-align:right;position:relative;right:17px;top:13px;">www.7ebit.net</p>
+	</div>
+
+	<div id="dowload" class="yingmai-div6" style="width:290px;height:45px;position:relative;left:15px;top:-75px;">
+	  <p id="dowloadText" class="yingmai-font2" style="float:left;position:relative;left:17px;">钱包下载网址</p>
+	  <p id="dowloadAddress" class="yingmai-font6" style="text-align:right;position:relative;right:17px;top:13px;">www.kcash.com</p>
+	</div>
+
+	<div id="note" style="width:290px;height:45px;position:relative;left:15px;top:-80px;">
+	  <p id="noteText" class="yingmai-font4" style="float:left;position:relative;left:1px;">注解：资金盘理财；邀请额的7%归自己所有，达到点赚7倍可以无冻结秒提</p>
+	</div>
+	
+      </div>    
+    </div>
+  </body>
+  
+</html>

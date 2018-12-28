@@ -1,0 +1,7 @@
+$(document).on("pagecreate","#pageone",function(){
+    const baseWidth = 320;
+    const baseHeight = 568;
+    const thisWidth = window.innerWidth;
+    const thisHeight = window.innerHeight;
+    console.log('ready');
+});

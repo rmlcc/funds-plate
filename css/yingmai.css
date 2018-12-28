@@ -1,0 +1,149 @@
+.yingmai-icon{
+    border: 0 solid #E3B110;
+}
+
+.yingmai-div1{
+    background: rgba(116,61,204,0.67);
+    border-radius: 15px;
+}
+
+.yingmai-div2{
+    background: #231D3A;
+    box-shadow: 0 0 33px 0 rgba(34,34,44,0.25);
+    border-radius: 6px;
+}
+
+.yingmai-div3{
+    opacity: 0.12;
+    background: #FFFFFF;
+    border-radius: 6px;
+}
+
+.yingmai-div4{
+    background: #BF5FC1;
+    border-radius: 6px;
+}
+
+.yingmai-div5{
+    background: #5A63FB;
+    border-radius: 5px;
+}
+
+.yingmai-div6{
+    background: #292244;
+    box-shadow: 0 0 33px 0 rgba(34,34,44,0.25);
+    border-radius: 6px;
+}
+
+.yingmai-div7{
+    background: #3C3360;
+    box-shadow: 0 0 33px 0 rgba(34,34,44,0.25);
+    border-radius: 6px;
+}
+
+.yingmai-font1{
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0.25px;
+}
+
+.yingmai-font2{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.29px;
+}
+
+.yingmai-font3{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+.yingmai-font4{
+    opacity: 0.5;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0.25px;
+    line-height: 17px;
+}
+
+.yingmai-font5{
+    opacity: 0.5;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.25px;
+}
+
+.yingmai-font6{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #F8E71C;
+    letter-spacing: 0.25px;
+}
+
+.yingmai-button1{
+    background-color:#743DCC;
+    border-radius:100px 100px 100px 100px;
+    background-image: linear-gradient(-144deg, #5A63FB 0%, #BF5FC1 100%);
+    box-shadow: 0 2px 4px 0 #110C14;
+    border-radius: 15px;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.29px;
+}
+
+.yingmai-button1_click{
+    background-color:#743DCC;;
+    border-radius:100px 100px 100px 100px;
+    background-image: linear-gradient(-144deg, #5A63FB 0%, #C0C0C0 100%);
+    box-shadow: 0 2px 4px 0 #110C14;
+    border-radius: 15px;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.29px;
+}
+
+.yingmai-button2{
+    background:url(../image/hdpi/多边形_空.png);
+    font-family: PingFangSC-Semibold;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0.29px;
+    text-align: center;
+}
+
+.yingmai-button2_click{
+    background:url(../image/hdpi/多边形_实.png);
+    font-family: PingFangSC-Semibold;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0.29px;
+    text-align: center;
+}
+
+.yingmai-button3{
+    background-image: linear-gradient(-138deg, #5A63FB 0%, #BF5FC1 100%);
+    box-shadow: 0 0 33px 0 rgba(34,34,44,0.25);
+    border-radius: 6px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.25px;
+}
+
+.yingmai-button3_click{
+    background-image: linear-gradient(-138deg, #5A63FB 0%, #C0C0C0 100%);
+    box-shadow: 0 0 33px 0 rgba(34,34,44,0.25);
+    border-radius: 6px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.25px;
+}

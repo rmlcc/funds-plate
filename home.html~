@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+
+    <div data-role="page">
+      
+      <div data-role="main" class="ui-content" style="background:url(image/hdpi/背景图.png);background-size:320px 360px;">
+	<img src="image/icon.jpg" width="30" height="30" style="float:left;position:relative;left:-2px;"></img>
+	<div style="width:158px;height:30px;background-color:#743DCC;border-radius:100px 100px 100px 100px;background:rgba(116,61,204,0.67);;float:left;position:relative;left:23px;">
+	  <img src="image/hdpi/金额.png" width="16" height="16" style="position:relative;left:12px;top:8px;float:left;"></img>
+	  <p style="color:#FFFFFF;font-size:12px;float:left;position:relative;left:30px;bottom:4px;">邀请额 1000CNY</p>
+	</div>
+	<div style="width:60px;height:30px;background-color:#743DCC;border-radius:100px 100px 100px 100px;background-image: linear-gradient(-144deg, #5A63FB 0%, #BF5FC1 100%);box-shadow: 0 2px 4px 0 #110C14;border-radius: 15px;;float:left;position:relative;left:43px;">
+	  <p style="color:#FFFFFF;font-size:12px;float:left;position:relative;left:17px;bottom:4px;">邀请</p>
+	</div>
+	<div data-role="controlgroup" data-type="horizontal">
+	  <div style="width:60px;height:60px;background:url(image/hdpi/多边形_空.png);background-size:60px 60px;float:left;position:relative;left:5px;top:27px;">
+	    <p style="color:#20EBF1;font-size:20px;float:left;position:relative;left:18px;top:-3px;">50</p>
+	  </div>
+	  <div style="width:60px;height:60px;background:url(image/hdpi/多边形_空.png);background-size:60px 60px;float:left;position:relative;left:53px;top:27px;">
+	    <p style="color:#20EBF1;font-size:20px;float:left;position:relative;left:12px;top:-3px;">100</p>
+	  </div>
+	  <div style="width:60px;height:60px;background:url(image/hdpi/多边形_空.png);background-size:60px 60px;float:left;position:relative;left:101px;top:27px;">
+	    <p style="color:#20EBF1;font-size:20px;float:left;position:relative;left:12px;top:-3px;">300</p>
+	  </div>
+	</div><br>
+	<div data-role="controlgroup" data-type="horizontal">
+	  <div style="width:60px;height:60px;background:url(image/hdpi/多边形_空.png);background-size:60px 60px;float:left;position:relative;left:5px;top:27px;">
+	    <p style="color:#20EBF1;font-size:20px;float:left;position:relative;left:12px;top:-3px;">500</p>
+	  </div>
+	  <div style="width:60px;height:60px;background:url(image/hdpi/多边形_空.png);background-size:60px 60px;float:left;position:relative;left:53px;top:27px;">
+	    <p style="color:#20EBF1;font-size:20px;float:left;position:relative;left:12px;top:-3px;">800</p>
+	  </div>
+	  <div style="width:60px;height:60px;background:url(image/hdpi/多边形_空.png);background-size:60px 60px;float:left;position:relative;left:101px;top:27px;">
+	    <p style="color:#20EBF1;font-size:20px;float:left;position:relative;left:6px;top:-3px;">1000</p>
+	  </div>
+	</div><br>
+	<div data-role="controlgroup" data-type="horizontal">
+	  <div style="width:60px;height:60px;background:url(image/hdpi/多边形_空.png);background-size:60px 60px;float:left;position:relative;left:5px;top:27px;">
+	    <p style="color:#20EBF1;font-size:20px;float:left;position:relative;left:6px;top:-3px;">3000</p>
+	  </div>
+	  <div style="width:60px;height:60px;background:url(image/hdpi/多边形_空.png);background-size:60px 60px;float:left;position:relative;left:53px;top:27px;">
+	    <p style="color:#20EBF1;font-size:20px;float:left;position:relative;left:6px;top:-3px;">5000</p>
+	  </div>
+	  <div style="width:60px;height:60px;background:url(image/hdpi/多边形_空.png);background-size:60px 60px;float:left;position:relative;left:101px;top:27px;">
+	    <p style="color:#20EBF1;font-size:20px;float:left;position:relative;left:6px;top:-3px;">8000</p>
+	  </div>
+	</div><br>
+	<div style="width:320px;height:35px;"></div>
+      </div>
+
+      
+      <div style="width:320px;height:800px;background-color:#1B1420;">
+	<div class="ui-corner-all" style="width:260px;height:70px;background-color:#231D3A;position:relative;left:30px;top:-35px;">
+	  <p style="color:#FFFFFF;font-size:16px;float:left;position:relative;left:17px;bottom:4px;">点赚 7%~49%</p>
+	  <div style="width:224px;height:6px;opacity:0.12;background:#FFFFFF;border-radius:6px;position:relative;left:18px;top:50px;">
+	    <div style="width:122px;height:6px;background:#BF5FC1;border-radius:6px;">
+	      <div style="width:18px;height:6px;background:#5A63FB;border-radius:5px;"></div>
+	    </div>
+	  </div>
+	</div>
+	
+	<div class="ui-corner-all" style="width:290px;height:45px;background-color:#292244;position:relative;left:15px;top:-20px;">
+	  <p style="font-family: PingFangSC-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: 0.29px;float:left;position:relative;left:17px;">总额</p>
+	  <p style="opacity: 0.5;font-family: PingFangSC-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: 0.25px;text-align: right;float:left;position:relative;left:180px;">1000CNT</p>
+	</div>
+
+	<div class="ui-corner-all" style="width:290px;height:45px;background-color:#292244;position:relative;left:15px;top:-20px;">
+	  <p style="font-family: PingFangSC-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: 0.29px;position:relative;left:17px;top:12px;">无冻结</p>
+	  <p style="opacity: 0.5;font-family: PingFangSC-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: 0.25px;text-align: right;position:relative;left:-18px;top:-18px;">1000CNT</p>
+	</div>
+
+	<div class="ui-corner-all" style="width:290px;height:45px;background-color:#292244;position:relative;left:15px;top:-20px;">
+	  <p style="font-family: PingFangSC-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: 0.29px;position:relative;left:17px;top:12px;">冻结</p>
+	</div>
+
+	<div class="ui-corner-all" style="width:290px;height:45px;background-color:#292244;position:relative;left:15px;top:-20px;">
+	  <p style="font-family: PingFangSC-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: 0.29px;position:relative;left:17px;top:12px;">ECT提token地址:</p>
+	  <input type="text" style="float:left"></input>
+	</div>
+
+	<div class="ui-corner-all" style="width:290px;height:45px;position:relative;left:15px;top:-20px;">
+	  <div class="ui-corner-all" style="width:200px;height:45px;background-color:#292244;position:relative;top:15px;float:left">
+	    <p style="font-family: PingFangSC-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: 0.29px;position:relative;left:17px;top:0px;">提token数量:</p>
+	  </div>
+	  <div style="width:80px;height:45px;background-image: linear-gradient(-138deg, #5A63FB 0%, #BF5FC1 100%);box-shadow: 0 0 33px 0 rgba(34,34,44,0.25);border-radius: 6px;float:left;position:relative;left:10px;top:15px">
+	    <p style="font-family: PingFangSC-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: 0.25px;text-align: right;position:relative;right:34px;top:0px">提</p>
+	  </div>
+	</div>
+
+	<div class="ui-corner-all" style="width:290px;height:45px;background-color:#292244;position:relative;left:15px;top:-5px;">
+	  <p style="font-family: PingFangSC-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: 0.29px;position:relative;left:17px;top:12px;">手续费</p>
+	</div>
+
+	<div class="ui-corner-all" style="width:290px;height:45px;background-color:#292244;position:relative;left:15px;top:-5px;">
+	  <p style="font-family: PingFangSC-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: 0.29px;position:relative;left:17px;top:12px;">ECT充token地址</p>
+	</div>
+
+	<div class="ui-corner-all" style="width:290px;height:45px;background-color:#292244;position:relative;left:15px;top:-5px;">
+	  <p style="font-family: PingFangSC-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: 0.29px;position:relative;left:17px;top:12px;">购买ECT网址</p>
+	</div>
+
+	<div class="ui-corner-all" style="width:290px;height:45px;background-color:#292244;position:relative;left:15px;top:-5px;">
+	  <p style="font-family: PingFangSC-Regular;font-size: 14px;color: #FFFFFF;letter-spacing: 0.29px;position:relative;left:17px;top:12px;">钱包下载网址</p>
+	</div>
+
+	<div class="ui-corner-all" style="width:290px;height:45px;position:relative;left:15px;top:-5px;">
+	  <p style="opacity: 0.4;font-family: PingFangSC-Regular;font-size: 12px;color: #FFFFFF;letter-spacing: 0.21px;">注解：资金盘理财；邀请额的7%归自己所有，达到点赚7倍可以无冻结秒提</p>
+	</div>
+	
+      </div>
+    </div>
+
+          
+    
+  </body>
+</html>

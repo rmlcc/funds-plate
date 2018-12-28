@@ -1,0 +1,57 @@
+$(document).on('pagecreate','#pagehome',function(){
+    const baseWidth = 320;
+    const baseHeight = 568;
+    const thisWidth = window.innerWidth;
+    const thisHeight = window.innerHeight;
+    console.log('width:' + thisWidth);
+    console.log('height:' + thisHeight);
+
+    var main = document.getElementById('main');
+    main.style.backgroundSize = String(thisWidth) + 'px 360px';
+
+    var icon = document.getElementById('icon');
+    icon.width = 30/baseWidth*thisWidth;
+    icon.height = 30/baseWidth*thisWidth;
+    icon.style.left = '-' + String(2 / baseWidth * thisWidth) + 'px';
+
+    var shareDiv = document.getElementById('shareDiv');
+    shareDiv.style.width = String(158 / baseWidth * thisWidth) + 'px';
+    shareDiv.style.left = String(23 / baseWidth * thisWidth) + 'px';
+
+    var shareIcon = document.getElementById('shareIcon');
+    shareIcon.width = 16/baseWidth*thisWidth;
+    shareIcon.height = 16/baseWidth*thisWidth;
+    shareIcon.style.left = String(11 / baseWidth * thisWidth) + 'px';
+
+    var shareText = document.getElementById('shareText');
+    shareText.style.left = String(26 / baseWidth * thisWidth) + 'px';
+
+    var shareValue = document.getElementById('shareValue');
+    shareValue.style.left = String(30 / baseWidth * thisWidth) + 'px';
+
+    var shareButton = document.getElementById('shareButton');
+    shareButton.style.width = String(60 / baseWidth * thisWidth) + 'px';
+    shareButton.style.left = String(43 / baseWidth * thisWidth) + 'px';
+
+    var shareButtonText = document.getElementById('shareButtonText');
+    shareButtonText.style.left = String(16 / baseWidth * thisWidth) + 'px';
+
+    var buttonGrop1 = document.getElementById('buttonGrop1');
+    buttonGrop1.style.top = String(27 / baseWidth * thisWidth) + 'px';
+
+    var buttonGrop2 = document.getElementById('buttonGrop2');
+    buttonGrop2.style.top = String(27 / baseWidth * thisWidth) + 'px';
+    
+    var buttonGrop3 = document.getElementById('buttonGrop3');
+    buttonGrop3.style.top = String(27 / baseWidth * thisWidth) + 'px';
+
+    var buy50 = document.getElementById('buy50');
+    buy50.style.backgroundSize = String(60 / baseWidth * thisWidth) + 'px' + ' ' + String(60 / baseWidth * thisWidth) + 'px';
+    buy50.style.width = String(60 / baseWidth * thisWidth) + 'px';
+    buy50.style.height = String(60 / baseWidth * thisWidth) + 'px';
+    buy50.style.left = String(5 / baseWidth * thisWidth) + 'px';
+    
+
+    var buy50Text = document.getElementById('buy50Text');
+    buy50.style.bottom = String(3 - ((3 / baseWidth * thisWidth)-3)) + 'px';
+});

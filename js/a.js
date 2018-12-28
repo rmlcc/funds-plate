@@ -1,0 +1,35 @@
+$(document).on("pagecreate","#pageone",function(){
+    $("#share").on("tap",function(){
+	this.style.background="#C0C0C0";
+    });
+    $("#p1").on("tap",function(){
+	this.style.backgroundImage='url("image/hdpi/多边形_实.png")';
+    });
+    $("#p2").on("tap",function(){
+	this.style.backgroundImage='url("image/hdpi/多边形_实.png")';
+    });
+    $("#p3").on("tap",function(){
+	this.style.backgroundImage='url("image/hdpi/多边形_实.png")';
+    });
+    $("#p4").on("tap",function(){
+	this.style.backgroundImage='url("image/hdpi/多边形_实.png")';
+    });
+    $("#p5").on("tap",function(){
+	this.style.backgroundImage='url("image/hdpi/多边形_实.png")';
+    });
+    $("#p6").on("tap",function(){
+	this.style.backgroundImage='url("image/hdpi/多边形_实.png")';
+    });
+    $("#p7").on("tap",function(){
+	this.style.backgroundImage='url("image/hdpi/多边形_实.png")';
+    });
+    $("#p8").on("tap",function(){
+	this.style.backgroundImage='url("image/hdpi/多边形_实.png")';
+    });
+    $("#p9").on("tap",function(){
+	this.style.backgroundImage='url("image/hdpi/多边形_实.png")';
+    });
+    $("#t1").on("tap",function(){
+	this.style.background="#C0C0C0";
+    });
+});
