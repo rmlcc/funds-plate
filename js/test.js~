@@ -1,0 +1,4 @@
+function postMsg(url,params){
+    $.post(url,params,function(data,status){
+    });
+}
