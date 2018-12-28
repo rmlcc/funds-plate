@@ -22,6 +22,9 @@ $(document).on('pagecreate','#pagehome',function(){
     var shareButton = document.getElementById('shareButton');
     //shareButton.style.left = String(43 / baseWidth * thisWidth) + 'px';
 
+    var hideDiv1 = document.getElementById('hideDiv1');
+    hideDiv1.style.width = thisWidth + 'px';
+
     var buy50 = document.getElementById('buy50');
     //buy50.style.left = String(5 / baseWidth * thisWidth) + 'px';
     buy50.style.left = String(5 / baseWidth * thisWidth *(2-baseWidth / thisWidth)) + 'px';
