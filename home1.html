@@ -195,6 +195,24 @@
 	</form>
       </div>
     </div>
+
+    <div data-role="page" id="page4" data-theme="b">
+      <div data-role="header">
+	<h1>请输入交易密码</h1>
+      </div>
+      <div data-role="main" class="ui-content">
+	<form method="post" action="/funds-plate/php/server.php">
+	  <input type="hidden" name="type" id="type4" value="5">
+	  <input type="hidden" name="mobile" id="mobile4" value="">
+	  <input type="hidden" name="password" id="password4" value="">
+	  <input type="hidden" name="amount" id="amount4" value="">
+	  <label for="password">交易密码:</label>
+	  <input type="password" name="password" id="password4">
+	  <input type="submit" value="确认">
+	  <a href="#page1" data-transition="fade" class="ui-btn">取消</a>
+	</form>
+      </div>
+    </div>
   </body>
   
 </html>

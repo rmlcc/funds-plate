@@ -16,6 +16,7 @@
     //×¢²á
     case 1:
       echo $_POST["mobile"] . ";";
+      echo $_POST["code"] . ";";
       echo $_POST["password"] . ";";
       break;
     //µÇÂ½
@@ -27,6 +28,7 @@
     case 3:
       echo $_POST["mobile"] . ";";
       echo $_POST["password"] . ";";
+      echo $_POST["code"] . ";";
       break;
     //ÑûÇë
     case 4:
