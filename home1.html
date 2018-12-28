@@ -12,6 +12,7 @@
   </head>
 
   <body>
+    
     <div data-role="page" id="pagehome">
       
       <div id="main" data-role="main" class="ui-content" style="background:url(image/hdpi/背景图.png);background-size:320px 360px;">
@@ -135,6 +136,64 @@
 	</div>
 	
       </div>    
+    </div>
+
+    <div data-role="page" id="page1" data-theme="b">
+      <div data-role="header">
+	<h1>用户登陆</h1>
+      </div>
+      <div data-role="main" class="ui-content">
+	<form method="post" action="/funds-plate/php/server.php">
+	  <input type="hidden" name="type" id="type" value="2">
+	  <label for="username">手机号码:</label>
+	  <input type="text" name="mobile" id="mobile">
+	  <label for="password">密码:</label>
+	  <input type="password" name="password" id="password"> 
+	  <input type="submit" value="登陆">
+	</form>
+	<a href="#page2" data-transition="fade" class="ui-btn">注册</a>
+	<a href="#page3" data-transition="fade">忘记密码</a>
+      </div>
+    </div>
+
+    <div data-role="page" id="page2" data-theme="b">
+      <div data-role="header">
+	<h1>用户注册</h1>
+      </div>
+      <div data-role="main" class="ui-content">
+	<form method="post" action="/funds-plate/php/server.php">
+	  <input type="hidden" name="type" id="type" value="1">
+	  <label for="mobile">手机号码:</label>
+	  <input type="text" name="mobile" id="mobile">
+	  <label for="code">验证码:</label>
+	  <input type="text" name="code" id="code">
+	  <label for="password">密码:</label>
+	  <input type="password" name="password" id="password">
+	  <a href="#" data-transition="fade" class="ui-btn">发送验证码</a>
+	  <input type="submit" value="确认">
+	  <a href="#page1" data-transition="fade" class="ui-btn">取消</a>
+	</form>
+      </div>
+    </div>
+
+    <div data-role="page" id="page3" data-theme="b">
+      <div data-role="header">
+	<h1>修改密码</h1>
+      </div>
+      <div data-role="main" class="ui-content">
+	<form method="post" action="/funds-plate/php/server.php">
+	  <input type="hidden" name="type" id="type" value="3">
+	  <label for="mobile">手机号码:</label>
+	  <input type="text" name="mobile" id="mobile">
+	  <label for="code">验证码:</label>
+	  <input type="text" name="code" id="code">
+	  <label for="password">新密码:</label>
+	  <input type="password" name="password" id="password">
+	  <a href="#" data-transition="fade" class="ui-btn">发送验证码</a>
+	  <input type="submit" value="确认">
+	  <a href="#page1" data-transition="fade" class="ui-btn">取消</a>
+	</form>
+      </div>
     </div>
   </body>
   

@@ -397,4 +397,8 @@ $(document).on('pagecreate','#pagehome',function(){
     function setdePositAddressText(text){
 	depositAddressText.innerText = text;
     }
+
+    if(getCookie('mobile') == '' || getCookie('passwordd') == ''){
+	window.location.href = '#page1'
+    }
 });
