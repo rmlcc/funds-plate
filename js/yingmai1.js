@@ -237,7 +237,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy50.className = 'yingmai-button2';
-	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),password:getCookie('password'),amount:'50'},function(data,status){
+	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'50'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
 	},150);
@@ -247,7 +247,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy100.className = 'yingmai-button2';
-	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),password:getCookie('password'),amount:'100'},function(data,status){
+	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'100'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
 	},150);
@@ -257,7 +257,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy300.className = 'yingmai-button2';
-	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),password:getCookie('password'),amount:'300'},function(data,status){
+	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'300'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
 	},150);
@@ -267,7 +267,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy500.className = 'yingmai-button2';
-	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),password:getCookie('password'),amount:'500'},function(data,status){
+	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'500'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
 	},150);
@@ -277,7 +277,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy800.className = 'yingmai-button2';
-	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),password:getCookie('password'),amount:'800'},function(data,status){
+	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'800'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
 	},150);
@@ -287,7 +287,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy1000.className = 'yingmai-button2';
-	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),password:getCookie('password'),amount:'1000'},function(data,status){
+	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'1000'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
 	},150);
@@ -297,7 +297,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy3000.className = 'yingmai-button2';
-	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),password:getCookie('password'),amount:'3000'},function(data,status){
+	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'3000'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
 	},150);
@@ -307,7 +307,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy5000.className = 'yingmai-button2';
-	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),password:getCookie('password'),amount:'5000'},function(data,status){
+	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'5000'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
 	},150);
@@ -317,7 +317,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy8000.className = 'yingmai-button2';
-	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),password:getCookie('password'),amount:'8000'},function(data,status){
+	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'8000'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
 	},150);
@@ -327,7 +327,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button3_click';
 	setTimeout(function(){
 	    drawButton.className = 'yingmai-button3';
-	    $.post("/funds-plate/php/server.php",{type:'10',mobile:getCookie('mobile'),password:getCookie('password'),address:drawAddress.value,amount:drawValue.value},function(data,status){
+	    $.post("/funds-plate/php/server.php",{type:'10',mobile:getCookie('mobile'),passwd:getCookie('passwd'),address:drawAddress.value,amount:drawValue.value},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
 	},150);
@@ -398,7 +398,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	depositAddressText.innerText = text;
     }
 
-    if(getCookie('mobile') == '' || getCookie('passwordd') == ''){
+    if(getCookie('mobile') == '' || getCookie('passwdd') == ''){
 	window.location.href = '#page1'
     }
 });

@@ -1,9 +1,9 @@
 <?php
   $servername = "localhost";
   $username = "root";
-  $password = "123456";
+  $passwd = "123456";
 
-  $conn = new mysqli($servername, $username, $password);
+  $conn = new mysqli($servername, $username, $passwd);
   if ($conn->connect_error) {
     die("连接失败: " . $conn->connect_error);
   }
@@ -17,17 +17,17 @@
     case 1:
       echo $_POST["mobile"] . ";";
       echo $_POST["code"] . ";";
-      echo $_POST["password"] . ";";
+      echo $_POST["passwd"] . ";";
       break;
     //登陆
     case 2:
       echo $_POST["mobile"] . ";";
-      echo $_POST["password"] . ";";
+      echo $_POST["passwd"] . ";";
       break;
     //修改密码
     case 3:
       echo $_POST["mobile"] . ";";
-      echo $_POST["password"] . ";";
+      echo $_POST["passwd"] . ";";
       echo $_POST["code"] . ";";
       break;
     //邀请
@@ -37,7 +37,7 @@
     //购买
     case 5:
       echo $_POST["mobile"] . ";";
-      echo $_POST["password"] . ";";
+      echo $_POST["passwd"] . ";";
       echo $_POST["amount"] . ";";
       break;
     //获取收益
@@ -59,7 +59,7 @@
     //提现
     case 10:
       echo $_POST["mobile"] . ";";
-      echo $_POST["password"] . ";";
+      echo $_POST["passwd"] . ";";
       echo $_POST["address"] . ";";
       echo $_POST["amount"] . ";";
       break;
