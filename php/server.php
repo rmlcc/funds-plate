@@ -25,8 +25,8 @@
       //echo $_POST["mobile"] . ";";
       //echo $_POST["code"] . ";";
       //echo $_POST["passwd"] . ";";
-      setcookie("user", "13862383373", time()+7200);
-      setcookie("passwd", "13862383373", time()+7200);
+      setcookie("user", "13862383373", time()+7200,"/funds-plate/home1.html");
+      setcookie("passwd", "13862383373", time()+7200,"/funds-plate/home1.html");
       goto_url("/funds-plate/home1.html");
       break;
     //µÇÂ½
