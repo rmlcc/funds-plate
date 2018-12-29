@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS `user_table`(
        `user_id` INT UNSIGNED AUTO_INCREMENT,
        `user_name` VARCHAR(20) NOT NULL,
        `passwd` VARCHAR(64) NOT NULL,
-       `address` VARCHAT(128) NOT NULL,
+       `address` VARCHAR(128) NOT NULL,
        `registerd_address` VARCHAR(128) NOT NULL,
        `share_address` VARCHAR(128) NOT NULL,
        PRIMARY KEY(`user_id`)
@@ -23,7 +23,8 @@ CREATE TABLE IF NOT EXISTS `pay_table`(
        `pay_type` INT UNSIGNED,
        `pay_amount` FLOAT,
        `pay_date` DATE,
-       `user_id` INT UNSIGNED
+       `user_id` INT UNSIGNED,
+       PRIMARY KEY(`pay_id`)
  );
        
 
