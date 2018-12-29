@@ -398,7 +398,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	depositAddressText.innerText = text;
     }
 
-    if(getCookie('mobile') == '' || getCookie('passwdd') == ''){
-	window.location.href = '#page1'
+    if(getCookie('mobile') == '' || getCookie('passwd') == ''){
+	window.location.href = '#page1';
     }
 });

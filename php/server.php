@@ -2,22 +2,30 @@
   $servername = "localhost";
   $username = "root";
   $passwd = "123456";
+  $dbname = "yingmai";
 
-  $conn = new mysqli($servername, $username, $passwd);
+  $conn = new mysqli($servername, $username, $passwd, $dbname);
   if ($conn->connect_error) {
     die("连接失败: " . $conn->connect_error);
+  }
+
+  function goto_url($url){
+    echo "<script>window.location.href = " . $url . ";</script>";
   }
 
   switch($_POST["type"]){
     //获取验证码
     case 0:
-      echo $_POST["mobile"];
+      //echo $_POST["mobile"];
       break;
     //注册
     case 1:
-      echo $_POST["mobile"] . ";";
-      echo $_POST["code"] . ";";
-      echo $_POST["passwd"] . ";";
+      //echo $_POST["mobile"] . ";";
+      //echo $_POST["code"] . ";";
+      //echo $_POST["passwd"] . ";";
+      setcookie("user", "13862383373", time()+7200);
+      setcookie("passwd", "13862383373", time()+7200);
+      goto_url("/funds-plate/home1.html");
       break;
     //登陆
     case 2:
