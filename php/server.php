@@ -25,20 +25,26 @@
       //echo $_POST["mobile"] . ";";
       //echo $_POST["code"] . ";";
       //echo $_POST["passwd"] . ";";
-      setcookie("mobile", "13862383373", time()+7200,"/funds-plate/home1.html");
-      setcookie("passwd", "13862383373", time()+7200,"/funds-plate/home1.html");
+      setcookie("mobile", $_POST["mobile"], time()+7200,"/funds-plate/home1.html");
+      setcookie("passwd", $_POST["passwd"], time()+7200,"/funds-plate/home1.html");
       goto_url("/funds-plate/home1.html");
       break;
     //µÇÂ½
     case 2:
-      echo $_POST["mobile"] . ";";
-      echo $_POST["passwd"] . ";";
+      //echo $_POST["mobile"] . ";";
+      //echo $_POST["passwd"] . ";";
+      setcookie("mobile", $_POST["mobile"], time()+7200,"/funds-plate/home1.html");
+      setcookie("passwd", $_POST["passwd"], time()+7200,"/funds-plate/home1.html");
+      goto_url("/funds-plate/home1.html");
       break;
     //ÐÞ¸ÄÃÜÂë
     case 3:
-      echo $_POST["mobile"] . ";";
-      echo $_POST["passwd"] . ";";
-      echo $_POST["code"] . ";";
+      //echo $_POST["mobile"] . ";";
+      //echo $_POST["passwd"] . ";";
+      //echo $_POST["code"] . ";";
+      setcookie("mobile", $_POST["mobile"], time()+7200,"/funds-plate/home1.html");
+      setcookie("passwd", $_POST["passwd"], time()+7200,"/funds-plate/home1.html");
+      goto_url("/funds-plate/home1.html");
       break;
     //ÑûÇë
     case 4:

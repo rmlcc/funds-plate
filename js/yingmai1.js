@@ -399,6 +399,10 @@ $(document).on('pagecreate','#pagehome',function(){
     }
 
     if(getCookie('mobile') == '' || getCookie('passwd') == ''){
-	window.location.href = '#page1';
+	window.location.href = '#page1';	
+    }
+    else{
+	var mobile = getCookie('mobile');
+	setUser(mobile.substr(0,3) + '****' + mobile.substr(7));
     }
 });
