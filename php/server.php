@@ -10,7 +10,9 @@
   }
 
   function goto_url($url){
-    echo "<script>window.location.href = " . $url . ";</script>";
+    echo "<html><head></head><body>";
+    echo "<script>window.location.href = \"" . $url . "\";</script>";
+    echo "</body></html>";
   }
 
   switch($_POST["type"]){
