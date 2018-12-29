@@ -1,4 +1,4 @@
-CREATE DATABASE yingmai;
+CREATE DATABASE IF NOT EXISTS yingmai;
 USE yingmai;
 CREATE TABLE IF NOT EXISTS `user_table`(
        `user_id` INT UNSIGNED AUTO_INCREMENT,
