@@ -237,6 +237,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy50.className = 'yingmai-button2';
+	    window.location.href = '#page4';
 	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'50'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
@@ -247,6 +248,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy100.className = 'yingmai-button2';
+	    window.location.href = '#page4';
 	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'100'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
@@ -257,6 +259,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy300.className = 'yingmai-button2';
+	    window.location.href = '#page4';
 	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'300'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
@@ -267,6 +270,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy500.className = 'yingmai-button2';
+	    window.location.href = '#page4';
 	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'500'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
@@ -277,6 +281,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy800.className = 'yingmai-button2';
+	    window.location.href = '#page4';
 	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'800'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
@@ -287,6 +292,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy1000.className = 'yingmai-button2';
+	    window.location.href = '#page4';
 	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'1000'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
@@ -297,6 +303,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy3000.className = 'yingmai-button2';
+	    window.location.href = '#page4';
 	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'3000'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
@@ -307,6 +314,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy5000.className = 'yingmai-button2';
+	    window.location.href = '#page4';
 	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'5000'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
@@ -317,6 +325,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy8000.className = 'yingmai-button2';
+	    window.location.href = '#page4';
 	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'8000'},function(data,status){
 		console.log("数据: \n" + data + "\n状态: " + status);
 	    });
@@ -399,7 +408,7 @@ $(document).on('pagecreate','#pagehome',function(){
     }
 
     if(getCookie('mobile') == '' || getCookie('passwd') == ''){
-	window.location.href = '#page1';	
+	window.location.href = '#page1';
     }
     else{
 	var mobile = getCookie('mobile');
