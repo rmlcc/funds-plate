@@ -247,10 +247,9 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy100.className = 'yingmai-button2';
+	    $("#mobile4")[0].value = getCookie('mobile');
+	    $("#amount4")[0].value = 100;
 	    window.location.href = '#page4';
-	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'100'},function(data,status){
-		console.log("数据: \n" + data + "\n状态: " + status);
-	    });
 	},150);
     });
 
@@ -258,10 +257,9 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy300.className = 'yingmai-button2';
+	    $("#mobile4")[0].value = getCookie('mobile');
+	    $("#amount4")[0].value = 300;
 	    window.location.href = '#page4';
-	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'300'},function(data,status){
-		console.log("数据: \n" + data + "\n状态: " + status);
-	    });
 	},150);
     });
 
@@ -269,10 +267,9 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy500.className = 'yingmai-button2';
+	    $("#mobile4")[0].value = getCookie('mobile');
+	    $("#amount4")[0].value = 500;
 	    window.location.href = '#page4';
-	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'500'},function(data,status){
-		console.log("数据: \n" + data + "\n状态: " + status);
-	    });
 	},150);
     });
 
@@ -280,10 +277,9 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy800.className = 'yingmai-button2';
+	    $("#mobile4")[0].value = getCookie('mobile');
+	    $("#amount4")[0].value = 800;
 	    window.location.href = '#page4';
-	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'800'},function(data,status){
-		console.log("数据: \n" + data + "\n状态: " + status);
-	    });
 	},150);
     });
 
@@ -291,10 +287,9 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy1000.className = 'yingmai-button2';
+	    $("#mobile4")[0].value = getCookie('mobile');
+	    $("#amount4")[0].value = 1000;
 	    window.location.href = '#page4';
-	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'1000'},function(data,status){
-		console.log("数据: \n" + data + "\n状态: " + status);
-	    });
 	},150);
     });
 
@@ -302,10 +297,9 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy3000.className = 'yingmai-button2';
+	    $("#mobile4")[0].value = getCookie('mobile');
+	    $("#amount4")[0].value = 3000;
 	    window.location.href = '#page4';
-	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'3000'},function(data,status){
-		console.log("数据: \n" + data + "\n状态: " + status);
-	    });
 	},150);
     });
 
@@ -313,10 +307,9 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy5000.className = 'yingmai-button2';
+	    $("#mobile4")[0].value = getCookie('mobile');
+	    $("#amount4")[0].value = 5000;
 	    window.location.href = '#page4';
-	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'5000'},function(data,status){
-		console.log("数据: \n" + data + "\n状态: " + status);
-	    });
 	},150);
     });
 
@@ -324,10 +317,9 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy8000.className = 'yingmai-button2';
+	    $("#mobile4")[0].value = getCookie('mobile');
+	    $("#amount4")[0].value = 8000;
 	    window.location.href = '#page4';
-	    $.post("/funds-plate/php/server.php",{type:'5',mobile:getCookie('mobile'),passwd:getCookie('passwd'),amount:'8000'},function(data,status){
-		console.log("数据: \n" + data + "\n状态: " + status);
-	    });
 	},150);
     });
 
