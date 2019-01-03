@@ -237,8 +237,8 @@ $(document).on('pagecreate','#pagehome',function(){
 	this.className = 'yingmai-button2_click';
 	setTimeout(function(){
 	    buy50.className = 'yingmai-button2';
-	    $("#mobile4").value = getCookie('mobile');
-	    $("#amount4").value = 50;
+	    $("#mobile4")[0].value = getCookie('mobile');
+	    $("#amount4")[0].value = 50;
 	    window.location.href = '#page4';
 	},150);
     });
