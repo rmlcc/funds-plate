@@ -21,11 +21,11 @@
     if (mysqli_num_rows($result) > 0) {
       while($row = mysqli_fetch_assoc($result)) {
         if ($row["user_name"] == $username) {
-	  return false;
+	  return true;
 	}
       }
     }
-    return true;
+    return false;
   }
 
   switch($_POST["type"]){
