@@ -44,7 +44,7 @@
       $sql = $sql . "\"" . "xxxx" . "\",";
       $sql = $sql . "\"" . "xxxx" . "\",";
       $sql = $sql . "\"" . "xxxx" . "\");";
-      if (check_user($_POST["mobile"]) {
+      if (check_user($_POST["mobile"])) {
         setcookie("message", "user exists", time()+7200,"/funds-plate/home1.html");
         goto_url("/funds-plate/home1.html#page2");
 	break;
