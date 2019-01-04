@@ -25,9 +25,20 @@
       //echo $_POST["mobile"] . ";";
       //echo $_POST["code"] . ";";
       //echo $_POST["passwd"] . ";";
-      setcookie("mobile", $_POST["mobile"], time()+7200,"/funds-plate/home1.html");
-      setcookie("passwd", $_POST["passwd"], time()+7200,"/funds-plate/home1.html");
-      goto_url("/funds-plate/home1.html");
+      $sql = "insert into user_table (user_name,passwd,address,registerd_address,share_address) values (";
+      $sql = $sql . $_POST["mobile"] . ",";
+      $sql = $sql . md5($_POST["passwd"]) . ",";
+      $sql = $sql . "xxxx" . ",";
+      $sql = $sql . "xxxx" . ",";
+      $sql = $sql . "xxxx" . ");";
+      if (mysqli_query($conn, $sql)) {
+        setcookie("mobile", $_POST["mobile"], time()+7200,"/funds-plate/home1.html");
+      	setcookie("passwd", $_POST["passwd"], time()+7200,"/funds-plate/home1.html");
+      	goto_url("/funds-plate/home1.html");
+      }
+      else {
+        die("Êý¾Ý¿â²åÈëÊ§°Ü: " . $conn->connect_error);
+      }
       break;
     //µÇÂ½
     case 2:
