@@ -15,6 +15,8 @@
     echo "</body></html>";
   }
 
+  $status = false;
+
   switch($_POST["type"]){
     //获取验证码
     case 0:
@@ -32,10 +34,13 @@
           if ($row["user_name"] == $_POST["mobile"]) {
 	    setcookie("message", "user_exists", time()+7200,"/funds-plate/home1.html");
             goto_url("/funds-plate/home1.html#page2");
-	    break;
+	    $status = true;
 	  }
         }
       }
+
+      if($status)
+        break;
       
       $sql = "insert into user_table (user_name,passwd,address,registerd_address,share_address) values (";
       $sql = $sql . "\"" . $_POST["mobile"] . "\",";
