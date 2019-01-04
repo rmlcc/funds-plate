@@ -37,6 +37,7 @@
       	goto_url("/funds-plate/home1.html");
       }
       else {
+        echo $sql;
         die("Êý¾Ý¿â²åÈëÊ§°Ü: " . $conn->connect_error);
       }
       break;
