@@ -27,7 +27,7 @@
       //echo $_POST["passwd"] . ";";
       $sql = "insert into user_table (user_name,passwd,address,registerd_address,share_address) values (";
       $sql = $sql . "\"" . $_POST["mobile"] . "\",";
-      $sql = $sql . "\"" . md5($_POST["passwd"]) . ",";
+      $sql = $sql . "\"" . md5($_POST["passwd"]) . "\",";
       $sql = $sql . "\"" . "xxxx" . "\",";
       $sql = $sql . "\"" . "xxxx" . "\",";
       $sql = $sql . "\"" . "xxxx" . "\");";
