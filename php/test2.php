@@ -1,0 +1,15 @@
+<?php
+  $servername = "localhost";
+  $username = "root";
+  $passwd = "123456";
+  $dbname = "yingmai";
+
+  $conn = new mysqli($servername, $username, $passwd, $dbname);
+  if ($conn->connect_error) {
+    die("Á¬½ÓÊ§°Ü: " . $conn->connect_error);
+  }
+
+  $sql = "select * from user_table;";
+  $result = mysqli_query($conn, $sql);
+  echo mysqli_num_rows($result);
+?>
