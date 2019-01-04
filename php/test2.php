@@ -11,5 +11,12 @@
 
   $sql = "select * from user_table;";
   $result = mysqli_query($conn, $sql);
-  echo mysqli_num_rows($result);
+
+  function check_user(){
+    $sql = "select * from user_table;";
+    $result = mysqli_query($conn, $sql);
+    echo mysqli_num_rows($result);
+  }
+
+  check_user();
 ?>
