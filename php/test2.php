@@ -9,9 +9,6 @@
     die("Á¬½ÓÊ§°Ü: " . $conn->connect_error);
   }
 
-  $sql = "select * from user_table;";
-  $result = mysqli_query($conn, $sql);
-
   function check_user(){
     $sql = "select * from user_table;";
     $result = mysqli_query($conn, $sql);
