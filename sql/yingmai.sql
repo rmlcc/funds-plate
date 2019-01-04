@@ -3,7 +3,7 @@ USE yingmai;
 CREATE TABLE IF NOT EXISTS `user_table`(
        `user_id` INT UNSIGNED AUTO_INCREMENT,
        `user_name` VARCHAR(20) NOT NULL,
-       `passwd` VARCHAR(64) NOT NULL,
+       `passwd` VARCHAR(512) NOT NULL,
        `address` VARCHAR(128) NOT NULL,
        `registerd_address` VARCHAR(128) NOT NULL,
        `share_address` VARCHAR(128) NOT NULL,
