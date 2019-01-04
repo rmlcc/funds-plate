@@ -345,7 +345,7 @@ $(document).on('pagecreate','#pagehome',function(){
 	$.post("/funds-plate/php/server.php",{type:'0',mobile:mobile},function(data,status){
 	    console.log("Êý¾Ý: \n" + data + "\n×´Ì¬: " + status);
 	});
-    }
+    });
 
     $("#buyToken").on("tap",function(){
 	window.location.href = 'https://www.7ebit.net'
