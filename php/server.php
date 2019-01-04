@@ -18,7 +18,7 @@
   switch($_POST["type"]){
     //获取验证码
     case 0:
-      //echo $_POST["mobile"];
+      echo $_POST["mobile"];
       break;
     //注册
     case 1:
