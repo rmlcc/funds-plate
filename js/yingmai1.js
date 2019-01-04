@@ -1,3 +1,33 @@
+function setCookie(cname,cvalue,exdays){
+    var d = new Date();
+    d.setTime(d.getTime()+(exdays*24*60*60*1000));
+    var expires = "expires="+d.toGMTString();
+    document.cookie = cname+"="+cvalue+"; "+expires;
+}
+
+function getCookie(cname){
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i].trim();
+        if (c.indexOf(name)==0) { return c.substring(name.length,c.length); }
+    }
+    return "";
+}
+    
+function checkCookie(){
+    var user=getCookie("username");
+    if (user!=""){
+        alert("欢迎 " + user + " 再次访问");
+    }
+    else {
+        user = prompt("请输入你的名字:","");
+        if (user!="" && user!=null){
+	    setCookie("username",user,30);
+        }
+    }
+}
+
 $(document).on('pagecreate','#pagehome',function(){
     const baseWidth = 320;
     const baseHeight = 568;
@@ -340,36 +370,6 @@ $(document).on('pagecreate','#pagehome',function(){
     $("#dowload").on("tap",function(){
 	window.location.href = 'https://www.kcash.com'
     });
-
-    function setCookie(cname,cvalue,exdays){
-	var d = new Date();
-	d.setTime(d.getTime()+(exdays*24*60*60*1000));
-	var expires = "expires="+d.toGMTString();
-	document.cookie = cname+"="+cvalue+"; "+expires;
-    }
-    
-    function getCookie(cname){
-	var name = cname + "=";
-	var ca = document.cookie.split(';');
-	for(var i=0; i<ca.length; i++) {
-            var c = ca[i].trim();
-            if (c.indexOf(name)==0) { return c.substring(name.length,c.length); }
-	}
-	return "";
-    }
-    
-    function checkCookie(){
-	var user=getCookie("username");
-	if (user!=""){
-            alert("欢迎 " + user + " 再次访问");
-	}
-	else {
-            user = prompt("请输入你的名字:","");
-            if (user!="" && user!=null){
-		setCookie("username",user,30);
-            }
-	}
-    }
     
     function setUser(user){
 	userName.innerText = user;
@@ -408,6 +408,8 @@ $(document).on('pagecreate','#pagehome',function(){
 });
 
 $(document).on('pagecreate','#page2',function(){
+    if(getCookie('message') == 'user_exists'){
+    }
     $("#sendCode1").on("tap",function(){
 	var mobile = $("#mobile2")[0].value;
 	$.post("/funds-plate/php/server.php",{type:'0',mobile:mobile},function(data,status){
