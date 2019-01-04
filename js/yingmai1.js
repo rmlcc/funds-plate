@@ -409,6 +409,7 @@ $(document).on('pagecreate','#pagehome',function(){
 
 $(document).on('pagecreate','#page2',function(){
     if(getCookie('message') == 'user_exists'){
+	$('#popwin')[0].click();
     }
     $("#sendCode1").on("tap",function(){
 	var mobile = $("#mobile2")[0].value;
