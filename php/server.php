@@ -17,7 +17,7 @@
 
   function check_user($username){
     $sql = "select * from user_table;";
-    $result = mysqli_query($conn, $sql);
+    $result = $conn->query($sql);
     if (mysqli_num_rows($result) > 0) {
       while($row = mysqli_fetch_assoc($result)) {
         if ($row["user_name"] == $username) {
