@@ -15,6 +15,19 @@
     echo "</body></html>";
   }
 
+  function check_user($username){
+    $sql = "select * from user_table;";
+    $result = mysqli_query($conn, $sql);
+    if (mysqli_num_rows($result) > 0) {
+      while($row = mysqli_fetch_assoc($result)) {
+        if ($row["user_name"] == $username) {
+	  return false;
+	}
+      }
+    }
+    return true;
+  }
+
   switch($_POST["type"]){
     //获取验证码
     case 0:
@@ -31,6 +44,11 @@
       $sql = $sql . "\"" . "xxxx" . "\",";
       $sql = $sql . "\"" . "xxxx" . "\",";
       $sql = $sql . "\"" . "xxxx" . "\");";
+      if (check_user($_POST["mobile"]) {
+        setcookie("message", "user exists", time()+7200,"/funds-plate/home1.html");
+        goto_url("/funds-plate/home1.html#page2");
+	break;
+      }
       if (mysqli_query($conn, $sql)) {
         setcookie("mobile", $_POST["mobile"], time()+7200,"/funds-plate/home1.html");
       	setcookie("passwd", $_POST["passwd"], time()+7200,"/funds-plate/home1.html");
@@ -92,4 +110,6 @@
       echo $_POST["amount"] . ";";
       break;
   }
+
+  mysqli_close($conn);
 ?>
