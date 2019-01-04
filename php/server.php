@@ -35,6 +35,7 @@
 	    setcookie("message", "user_exists", time()+7200,"/funds-plate/home1.html");
             goto_url("/funds-plate/home1.html#page2");
 	    $status = true;
+	    break;
 	  }
         }
       }
