@@ -26,11 +26,11 @@
       //echo $_POST["code"] . ";";
       //echo $_POST["passwd"] . ";";
       $sql = "insert into user_table (user_name,passwd,address,registerd_address,share_address) values (";
-      $sql = $sql . \" . $_POST["mobile"] . "\",";
-      $sql = $sql . \" . md5($_POST["passwd"]) . ",";
-      $sql = $sql . \" . "xxxx" . "\",";
-      $sql = $sql . \" . "xxxx" . "\",";
-      $sql = $sql . \" . "xxxx" . "\");";
+      $sql = $sql . "\"" . $_POST["mobile"] . "\",";
+      $sql = $sql . "\"" . md5($_POST["passwd"]) . ",";
+      $sql = $sql . "\"" . "xxxx" . "\",";
+      $sql = $sql . "\"" . "xxxx" . "\",";
+      $sql = $sql . "\"" . "xxxx" . "\");";
       if (mysqli_query($conn, $sql)) {
         setcookie("mobile", $_POST["mobile"], time()+7200,"/funds-plate/home1.html");
       	setcookie("passwd", $_POST["passwd"], time()+7200,"/funds-plate/home1.html");
