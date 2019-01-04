@@ -333,20 +333,6 @@ $(document).on('pagecreate','#pagehome',function(){
 	},150);
     });
 
-    $("sendCode1").on("tap",function(){
-	var mobile = $("#mobile2")[0].value;
-	$.post("/funds-plate/php/server.php",{type:'0',mobile:mobile},function(data,status){
-	    console.log("数据: \n" + data + "\n状态: " + status);
-	});
-    });
-
-    $("sendCode2").on("tap",function(){
-	var mobile = $("#mobile3")[0].value;
-	$.post("/funds-plate/php/server.php",{type:'0',mobile:mobile},function(data,status){
-	    console.log("数据: \n" + data + "\n状态: " + status);
-	});
-    });
-
     $("#buyToken").on("tap",function(){
 	window.location.href = 'https://www.7ebit.net'
     });
@@ -419,4 +405,22 @@ $(document).on('pagecreate','#pagehome',function(){
 	var mobile = getCookie('mobile');
 	setUser(mobile.substr(0,3) + '****' + mobile.substr(7));
     }
+});
+
+$(document).on('pagecreate','#page2',function(){
+    $("sendCode1").on("tap",function(){
+	var mobile = $("#mobile2")[0].value;
+	$.post("/funds-plate/php/server.php",{type:'0',mobile:mobile},function(data,status){
+	    console.log("数据: \n" + data + "\n状态: " + status);
+	});
+    });
+});
+
+$(document).on('pagecreate','#page3',function(){
+    $("sendCode2").on("tap",function(){
+	var mobile = $("#mobile3")[0].value;
+	$.post("/funds-plate/php/server.php",{type:'0',mobile:mobile},function(data,status){
+	    console.log("数据: \n" + data + "\n状态: " + status);
+	});
+    });
 });
